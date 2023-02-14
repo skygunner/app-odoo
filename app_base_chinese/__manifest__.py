@@ -18,7 +18,7 @@
 
 {
     'name': "App base chinese，中国化基本模块增强",
-    'version': '15.22.07.20',
+    'version': '15.23.02.14',
     'author': 'Sunpop.cn',
     'category': 'Base',
     'website': 'https://www.sunpop.cn',
@@ -67,8 +67,6 @@
         'views/sale_order_views.xml',
         'views/account_move_views.xml',
         'views/ir_default_views.xml',
-        # todo: set assets
-        # 'views/templates.xml',
         'wizard/sale_make_invoice_advance_views.xml',
         'data/ir_default_data.xml',
         'data/base_data.xml',
@@ -81,6 +79,11 @@
         'data/stock_location_data.xml',
         'data/sales_team_data.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'app_base_chinese/static/src/scss/app_style.scss',
+        ]
+    },
     'demo': [
     ],
     'test': [
